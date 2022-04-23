@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  /* display: grid;
+  place-items: center;
+  padding: 4rem; */
+  /* height: 100vh; */
+}
+
+.container {
+  /* min-width: 110vw; */
+  margin: 4vw 5vw;
+  /* border: 1px solid #c54444; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 30;
+  padding: 2rem;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.search-field {
+  font-size: 1rem;
+
+  width: 35ch;
+  padding: 0.5rem 1rem;
+
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  outline: none;
+}
+
+.search-btn {
+  font-size: 1rem;
+
+  padding: 0.55rem 1rem;
+
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  outline: none;
+
+  position: relative;
+  right: 2.5rem;
+
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.view {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* border: 1px solid red; */
+}
+
+.search-results {
+  /* border: 1px solid pink; */
+}
+
+.search-results ul {
+  list-style: none;
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+  gap: 10;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.recipe-item:hover {
+  background-color: lightgrey;
+}
+
+.recipe-thumbnail {
+  width: 5rem;
+  clip-path: circle();
+}
+
+.recipe-view {
+  /* border: 3px solid olive; */
+}
+
+.recipe-title {
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  bottom: 4rem;
+
+  background-color: aliceblue;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.recipe-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.recipe-ingredients {
+  background-color: #f2efee;
+  padding: 2rem 2rem;
+}
+
+.recipe-ingredients h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ingredients {
+  list-style-type: '\2713';
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 40;
+  row-gap: 10;
+}

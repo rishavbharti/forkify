@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishavbharti/forkify.git"
+  },
+  "author": "Rishav Bharti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishavbharti/forkify/issues"
+  },
+  "homepage": "https://github.com/rishavbharti/forkify#readme",
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
